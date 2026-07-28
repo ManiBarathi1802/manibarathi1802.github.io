@@ -114,29 +114,6 @@ a{color:inherit; text-decoration:none;}
   display:flex; gap:16px;
   font-family:var(--font-mono); font-size:11px; color:var(--text-faint);
 }
-
-.hero{padding:0 24px;}
-.hero-content{position:relative; z-index:2; max-width:680px; padding-top:24px;}
-.eyebrow{
-  font-family:var(--font-mono); font-size:20px; letter-spacing:0.05em;
-  color:var(--amber); margin-bottom:20px;
-}
-.hero-name{
-  font-family:var(--font-display); font-weight:700;
-  font-size:clamp(48px, 8vw, 84px);
-  line-height:1; letter-spacing:-0.02em;
-  margin-bottom:24px;
-}
-.cursor{color:var(--cyan); animation:blink 1s step-end infinite;}
-@keyframes blink{50%{opacity:0;}}
-
-.hero-desc{
-	text-align: justify;
-  font-size:18px; color:var(--text-dim); max-width:560px; margin-bottom:36px;
-}
-.hl{color:var(--cyan); font-weight:500;}
-
-.hero-actions{display:flex; gap:16px; margin-bottom:40px;}
 .btn{
   font-family:var(--font-mono); font-size:13px; letter-spacing:0.05em;
   padding:14px 26px; border:1px solid var(--line); transition:all 0.2s;
@@ -279,40 +256,25 @@ a:focus-visible, .btn:focus-visible{
   outline:2px solid var(--cyan); outline-offset:3px;
 }
 
-.hero-content {
-  display: grid;
-  grid-template-columns: 1fr 380px;
-  align-items: center;
-  gap: 60px;
-  min-height: 520px;
-  padding: 60px 75px;
+/* =========================================================
+   JOB TITLE
+========================================================= */
+
+.eyebrow {
+  margin: 0 0 24px;
+
+  font-family: var(--font-mono);
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.12em;
+
+  color: var(--amber);
 }
 
-.hero-text {
-  max-width: 750px;
-}
 
-.hero-photo-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.hero-photo {
-  width: 320px;
-  height: 400px;
-  overflow: hidden;
-  border: 1px solid #24344a;
-  background: #0b1524;
-}
-
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 .stack-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -869,4 +831,349 @@ a:focus-visible, .btn:focus-visible{
     min-width: 38px;
   }
 }
-```
+/* =========================================================
+   FINAL HERO OVERRIDE
+   Put this at the VERY BOTTOM of your CSS file
+========================================================= */
+
+#top.hero {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#top.hero > .viewport {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 1100px !important;
+
+    margin: 40px auto !important;
+
+    padding: 80px 60px 30px !important;
+
+    overflow: hidden !important;
+
+    border: 1px solid #21324A !important;
+
+    background: #0F1A2B !important;
+}
+
+
+/* HERO GRID */
+
+#top .hero-content {
+    position: relative !important;
+
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) 320px !important;
+
+    align-items: center !important;
+
+    gap: 60px !important;
+
+    width: 100% !important;
+
+    min-height: 500px !important;
+
+    padding: 20px 0 50px !important;
+
+    transform: none !important;
+}
+
+
+/* LEFT SIDE */
+
+#top .hero-text {
+    position: relative !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 600px !important;
+
+    min-width: 0 !important;
+}
+
+
+/* NAME */
+
+#top .hero-name {
+    position: relative !important;
+
+    display: block !important;
+
+    margin: 0 0 20px !important;
+
+    font-family: var(--font-display) !important;
+
+    font-size: clamp(48px, 7vw, 84px) !important;
+
+    line-height: 1 !important;
+
+    font-weight: 700 !important;
+
+    color: #F5F7FA !important;
+
+    white-space: normal !important;
+}
+
+
+/* JOB TITLE */
+
+#top .eyebrow {
+    display: block !important;
+
+    margin: 0 0 25px !important;
+
+    font-family: var(--font-mono) !important;
+
+    font-size: 16px !important;
+
+    letter-spacing: 0.12em !important;
+
+    color: #F2A65A !important;
+}
+
+
+/* DESCRIPTION */
+
+#top .hero-desc {
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 560px !important;
+
+    margin: 0 0 32px !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.7 !important;
+
+    color: #9DACC0 !important;
+
+    text-align: left !important;
+}
+
+
+/* HIGHLIGHTS */
+
+#top .hl {
+    color: #52E0C4 !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* BUTTONS */
+
+#top .hero-actions {
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center !important;
+
+    gap: 14px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+}
+
+#top .hero-actions .btn {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: auto !important;
+
+    min-width: 150px !important;
+
+    min-height: 48px !important;
+}
+
+
+/* =========================================================
+   RIGHT SIDE PHOTO
+========================================================= */
+
+#top .hero-photo-wrap {
+    position: relative !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+}
+
+
+#top .hero-photo {
+    position: relative !important;
+
+    display: block !important;
+
+    width: 300px !important;
+
+    height: 375px !important;
+
+    max-width: 100% !important;
+
+    overflow: hidden !important;
+
+    border: 1px solid #52E0C4 !important;
+
+    background: #0B1524 !important;
+}
+
+
+#top .hero-photo img {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    object-fit: cover !important;
+
+    object-position: center !important;
+}
+
+
+/* FOOTER */
+
+#top .viewport-footer {
+    position: relative !important;
+
+    display: flex !important;
+
+    justify-content: space-between !important;
+
+    width: 100% !important;
+
+    padding-top: 16px !important;
+
+    border-top: 1px solid #21324A !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    #top.hero > .viewport {
+        padding: 70px 35px 25px !important;
+    }
+
+    #top .hero-content {
+        grid-template-columns: minmax(0, 1fr) 260px !important;
+
+        gap: 30px !important;
+    }
+
+    #top .hero-photo {
+        width: 240px !important;
+
+        height: 300px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 700px) {
+
+    #top.hero {
+        padding: 0 10px !important;
+    }
+
+    #top.hero > .viewport {
+        margin: 20px auto !important;
+
+        padding: 55px 20px 20px !important;
+    }
+
+
+    #top .hero-content {
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        gap: 30px !important;
+
+        min-height: auto !important;
+
+        padding: 20px 0 35px !important;
+    }
+
+
+    #top .hero-photo-wrap {
+        order: -1 !important;
+
+        width: 100% !important;
+    }
+
+
+    #top .hero-photo {
+        width: 220px !important;
+
+        height: 275px !important;
+    }
+
+
+    #top .hero-text {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        text-align: center !important;
+    }
+
+
+    #top .hero-name {
+        font-size: clamp(42px, 12vw, 58px) !important;
+
+        text-align: center !important;
+    }
+
+
+    #top .eyebrow {
+        text-align: center !important;
+    }
+
+
+    #top .hero-desc {
+        max-width: 100% !important;
+
+        font-size: 15px !important;
+
+        text-align: center !important;
+    }
+
+
+    #top .hero-actions {
+        flex-direction: column !important;
+
+        width: 100% !important;
+    }
+
+
+    #top .hero-actions .btn {
+        width: 100% !important;
+    }
+}
