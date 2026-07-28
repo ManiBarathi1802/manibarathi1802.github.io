@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manibarathi — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <span class="nav-id">MB</span>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="nav-status"><span class="dot"></span>AVAILABLE</span>
+    </div>
+  </header>
+
+  <!-- HERO / VIEWPORT -->
+  <section class="hero" id="top">
+    <div class="viewport">
+      <span class="corner tl"></span>
+      <span class="corner tr"></span>
+      <span class="corner bl"></span>
+      <span class="corner br"></span>
+      <div class="scanline"></div>
+      <div class="crosshair" id="crosshair">
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+
+          <h1 class="hero-name">
+            Manibarathi
+          </h1>
+
+          <p class="eyebrow">SOFTWARE ENGINEER</p>
+
+          <p class="hero-desc">
+            Software Engineer with <span class="hl">3+ years of experience</span> building
+            real-time visualization and automation systems where
+            <span class="hl">software meets the operating room</span>
+            — from 3D surgical simulation and AI-driven solutions to secure clinical data
+            management in the cloud.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+
+        </div>
+
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <img src="assets/photo.jpg" alt="Portrait of Manibarathi">
+          </div>
+        </div>
+      </div>
+
+      <div class="viewport-footer">
+        <span>REC ● LIVE</span>
+        <span id="clock">--:--:--</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="tag">01 — About</span>
+      <h2>Profile</h2>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Centered Profile Description -->
+      <div class="about-text">
+        <p>
+          Software Engineer with <span class="highlight">3+ years of experience</span>
+          in medical imaging, surgical simulation, AI, automation, cloud computing,
+          and application development. Skilled in C++, Qt, Python, VTK, AWS,
+          React.js, and Flutter, with hands-on experience building real-world
+          healthcare and technology solutions, managing real-time patient data,
+          and developing secure cloud-based data management systems.
+        </p>
+
+        <p>
+          Passionate about innovation, research, AI, automation, and building
+          impactful software solutions that solve real-world problems.
+        </p>
+      </div>
+
+      <!-- Profile Statistics -->
+      <div class="about-stats">
+
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">
+            Years of Software Development Experience
+          </span>
+        </div>
+
+        <div class="stat">
+          <span class="stat-num">10K+</span>
+          <span class="stat-label">
+            Lines of Code Written
+          </span>
+        </div>
+
+        <div class="stat">
+          <span class="stat-num">2K+</span>
+          <span class="stat-label">
+            Real-Time Patient Data Managed
+          </span>
+        </div>
+
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">
+            Projects Delivered
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <span class="tag">02 — Work</span>
+      <h2>Selected Work</h2>
+    </div>
+
+    <div class="case-study">
+      <div class="case-visual">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="160" height="160" rx="2" stroke="var(--line-strong)" stroke-width="1" />
+          <circle cx="100" cy="100" r="55" stroke="var(--cyan)" stroke-width="1.2" />
+          <circle cx="100" cy="100" r="35" stroke="var(--cyan)" stroke-width="1.2" stroke-dasharray="4 4" />
+          <path d="M100 45 L100 155 M45 100 L155 100" stroke="var(--line-strong)" stroke-width="1" />
+          <path d="M65 130 Q90 70 100 100 T140 75" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" />
+          <circle cx="100" cy="100" r="3" fill="var(--amber)" />
+        </svg>
+      </div>
+      <div class="case-body">
+        <span class="mono item-index">01</span>
+        <h3>Medical Imaging &amp; Surgical Simulation Platform</h3>
+        <p>Built and delivered an end-to-end medical imaging and surgical simulation platform, combining C++, Qt,
+          Python, AWS, and VTK to provide high-fidelity real-time 2D/3D visualization — improving the efficiency of
+          surgical training by <strong>30%</strong>.</p>
+        <div class="case-tags">
+          <span>C++</span><span>Qt</span><span>VTK</span><span>Python</span><span>AWS</span>
+        </div>
+        <a href="https://surgeonslab.com/services" target="_blank" rel="noopener" class="view-link">View work →</a>
+      </div>
+    </div>
+
+    <div class="work-list">
+      <div class="work-item">
+        <div class="work-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="6" width="32" height="22" rx="1.5" stroke="currentColor" stroke-width="1.4" />
+            <path d="M10 34h20M20 28v6" stroke="currentColor" stroke-width="1.4" />
+            <path d="M9 20l5-6 4 4 5-7 8 9" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div>
+          <span class="mono item-index">02</span>
+          <h4>Automated Model Testing &amp; Deployment</h4>
+          <p>Automated end-to-end model testing and deployment pipelines using Qt, Python, and AWS, ensuring accurate
+            and reliable delivery of models to clients.</p>
+          <a href="https://surgeonslab.com/pre-op-planning" target="_blank" rel="noopener" class="view-link">View work
+            →</a>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 26a7 7 0 010-14 9 9 0 0117-3 6 6 0 014 11H12z" stroke="currentColor" stroke-width="1.4" />
+            <path d="M20 20v11m0 0l-4-4m4 4l4-4" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div>
+          <span class="mono item-index">03</span>
+          <h4>Secure Clinical Data Management</h4>
+          <p>Managed real patient medical data securely in the AWS cloud, ensuring efficient storage, synchronization,
+            and accessibility.</p>
+          <a href="https://surgeonslab.com/cathView" target="_blank" rel="noopener" class="view-link">View work →</a>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 14l14-8 14 8-14 8-14-8z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+            <path d="M6 14v12l14 8 14-8V14" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+            <path d="M20 22v12" stroke="var(--amber)" stroke-width="1.6" />
+          </svg>
+        </div>
+        <div>
+          <span class="mono item-index">04</span>
+          <h4>Order-to-Shipping Management System</h4>
+          <p>Developed an end-to-end order-to-shipping management system using React.js, streamlining the workflow from
+            order processing to shipment.</p>
+          <a href="https://ihoms.surgeonslab.com/" target="_blank" rel="noopener" class="view-link">View work →</a>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="1.4" />
+            <path d="M20 10v4M20 26v4M10 20h4M26 20h4" stroke="currentColor" stroke-width="1.2" />
+            <path d="M14 26l6-14 6 14-6-4-6 4z" fill="var(--amber)" stroke="var(--amber)" stroke-width="1" />
+          </svg>
+        </div>
+        <div>
+          <span class="mono item-index">05</span>
+          <h4>Anatomical Navigation System</h4>
+          <p>Built an anatomical navigation system for a mobile application using Flutter, guiding users through
+            anatomical structures with smooth, real-time interaction.</p>
+          <a href="https://surgeonslab.com/cathView" target="_blank" rel="noopener" class="view-link">View work →</a>
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.4" />
+            <circle cx="28" cy="12" r="5" stroke="currentColor" stroke-width="1.4" />
+            <circle cx="20" cy="28" r="5" stroke="currentColor" stroke-width="1.4" />
+            <path d="M15 15l4 9M25 15l-4 9M17 12h6" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div>
+          <span class="mono item-index">06</span>
+          <h4>Multi-API &amp; Application Integration</h4>
+          <p>Automated and integrated multiple third-party APIs and applications into a single connected workflow,
+            reducing manual handoffs and keeping data in sync across systems.</p>
+          <a href="https://surgeonslab.com/services" target="_blank" rel="noopener" class="view-link">View work →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <div class="section-head">
+      <span class="tag">03 — Stack</span>
+      <h2>Technical Skills</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-item">
+        <span class="stack-name">C++</span>
+        <span class="stack-role">Systems / performance</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">Qt</span>
+        <span class="stack-role">Desktop UI</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">VTK</span>
+        <span class="stack-role">3D visualization</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">Python</span>
+        <span class="stack-role">Automation / scripting</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">OpenCV</span>
+        <span class="stack-role">Computer vision</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">AI / ML</span>
+        <span class="stack-role">Intelligent solutions</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">AWS</span>
+        <span class="stack-role">Cloud infrastructure</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">Lambda</span>
+        <span class="stack-role">Serverless computing</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">DynamoDB</span>
+        <span class="stack-role">NoSQL database</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">Amazon RDS</span>
+        <span class="stack-role">Relational database</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">SQL</span>
+        <span class="stack-role">Database / queries</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">React.js</span>
+        <span class="stack-role">Web applications</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">HTML</span>
+        <span class="stack-role">Web structure</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">CSS</span>
+        <span class="stack-role">Web styling</span>
+      </div>
+
+      <div class="stack-item">
+        <span class="stack-name">Flutter</span>
+        <span class="stack-role">Mobile applications</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-head">
+      <span class="tag">04 — Education</span>
+      <h2>Education</h2>
+    </div>
+    <div class="edu-row">
+      <div class="edu-year mono">2018 — 2023</div>
+      <div class="edu-body">
+        <h3>Integrated Master's in Data Science</h3>
+        <p>Coimbatore Institute of Technology</p>
+      </div>
+      <div class="edu-grade">
+        <span class="stat-num">8.9</span>
+        <span class="stat-label">CGPA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="viewport small">
+      <!-- Corner Decorations --> <span class="corner tl"></span> <span class="corner tr"></span> <span
+        class="corner bl"></span> <span class="corner br"></span>
+      <div class="contact-content"> <span class="tag">05 — Contact</span>
+        <h2> Let's build something<br> that matters. </h2>
+        <p class="contact-desc"> I am actively seeking opportunities as a Software Engineer or Cloud Engineer where I
+          can apply my technical expertise, solve meaningful engineering challenges, and contribute my full potential to
+          building impactful products. </p> <!-- Resume Button --> <a href="assets/MANI BARATHI_SP S.pdf"
+          class="resume-btn" download> <span class="resume-icon"> <svg viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3v12m0 0l-5-5m5 5l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M5 20h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg> </span> <span>Download Resume</span> <span class="resume-arrow">↓</span> </a> <!-- Contact Links -->
+        <div class="contact-links"> <!-- Email --> <a href="mailto:manibarathids@gmail.com" class="contact-link"> <span
+              class="contact-link-left"> <span class="contact-icon email-icon"> <svg viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg> </span> <span class="contact-info"> <span class="mono">EMAIL</span>
+                <span>manibarathids@gmail.com</span> </span> </span> <span class="contact-arrow">↗</span> </a>
+          <!-- Phone --> <a href="tel:+919443092297" class="contact-link"> <span class="contact-link-left"> <span
+                class="contact-icon phone-icon"> <svg viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.5 3.5l3 2.5-2 3 c1.2 2.4 3.1 4.3 5.5 5.5l3-2 2.5 3c.5.6.4 1.5-.2 2 l-1.5 1.2c-.7.6-1.7.7-2.5.3 -4.7-2.3-8.5-6.1-10.8-10.8 -.4-.8-.3-1.8.3-2.5l1.2-1.5 c.5-.6 1.4-.7 2-.2z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> </span> <span class="contact-info"> <span class="mono">PHONE</span> <span>+91 9443092297</span>
+              </span> </span> <span class="contact-arrow">↗</span> </a> <!-- LinkedIn --> <a
+            href="https://www.linkedin.com/in/manibarathi-sivakumar-992657176/" target="_blank"
+            rel="noopener noreferrer" class="contact-link"> <span class="contact-link-left"> <span
+                class="contact-icon linkedin-icon"> <svg viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M8 10v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                  <circle cx="8" cy="7.5" r="1" fill="currentColor" />
+                  <path d="M12 16v-3.2 c0-1.5.8-2.8 2.3-2.8 1.5 0 2.2 1.1 2.2 2.8V16" stroke="currentColor"
+                    stroke-width="1.7" stroke-linecap="round" />
+                  <path d="M12 10v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg> </span> <span class="contact-info"> <span class="mono">LINKEDIN</span>
+                <span>/in/manibarathi-sivakumar</span> </span> </span> <span class="contact-arrow">↗</span> </a>
+          <!-- GitHub --> <a href="https://github.com/ManiBarathi1802" target="_blank" rel="noopener noreferrer"
+            class="contact-link"> <span class="contact-link-left"> <span class="contact-icon github-icon"> <svg
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 3 C7 3 3 7.1 3 12.2 c0 4.1 2.6 7.6 6.2 8.8 .45.1.6-.2.6-.43v-1.7 c-2.5.56-3-.98-3-.98 -.4-1.08-1-1.37-1-1.37 -.82-.58.06-.57.06-.57 .9.07 1.38.95 1.38.95 .8 1.38 2.1.98 2.62.75 .08-.59.32-.98.57-1.2 -2-.23-4.1-1.02-4.1-4.55 0-1 .35-1.82.93-2.46 -.1-.23-.4-1.17.09-2.43 0 0 .76-.25 2.5.94 .73-.21 1.5-.32 2.27-.32 .77 0 1.54.11 2.27.32 1.74-1.19 2.5-.94 2.5-.94 .49 1.26.18 2.2.09 2.43 .58.64.93 1.46.93 2.46 0 3.54-2.1 4.32-4.1 4.55 .33.29.61.85.61 1.72v2.55 c0 .24.16.54.61.43 C18.4 19.8 21 16.3 21 12.2 21 7.1 17 3 12 3z"
+                    fill="currentColor" />
+                </svg> </span> <span class="contact-info"> <span class="mono">GITHUB</span>
+                <span>/ManiBarathi1802</span> </span> </span> <span class="contact-arrow">↗</span> </a> </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Manibarathi</span>
+    <span class="mono">BUILT WITH HTML / CSS / JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
